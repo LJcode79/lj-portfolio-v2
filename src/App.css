@@ -190,6 +190,16 @@ nav.navbar .navbar-toggler:focus {
 	outline: none;
     box-shadow: none;
 }
+
+.wrap {
+  display: inline-block;
+}
+
+.wrap .placeholder {
+  visibility: hidden;
+  display: inline-block
+}
+
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
@@ -267,6 +277,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner button {
   color: #fff;
+  background-color: #40404023;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
