@@ -11,8 +11,6 @@ type Props = {}
 
 const Footer = (props: Props) => {
 
-  console.log(`${process.env.REACT_APP_MAILCHIMP_URL}?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`)
-
   return (
     <Container>
         <Row>
