@@ -47,7 +47,7 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col>
 
                     <TrackVisibility>
                     {({ isVisible }) =>
@@ -64,9 +64,6 @@ export const Banner = () => {
                         </div>}
                     </TrackVisibility>
 
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                    <img src={headerImg} alt="Header Img" />
                     </Col>
                 </Row>
             </Container>

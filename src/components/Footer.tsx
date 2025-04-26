@@ -4,6 +4,7 @@ import logo from "../assets/img/logo.svg"
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
 import navIcon3 from '../assets/img/nav-icon3.svg'
+import portfolioLogo from '../assets/img/portfoliov7.png'
 import { MailchimpForm } from './MailchimpForm'
 
 
@@ -12,12 +13,12 @@ type Props = {}
 const Footer = (props: Props) => {
 
   return (
-    <Container>
+    <Container fluid className = 'footer'>
         <Row>
           <MailchimpForm/>
         </Row>
         <Row className='justify-content-center'>
-          <img src={logo} alt="Logo" style={{ width: '50%', height: 'auto' }}/>
+          <img src={portfolioLogo} alt="Logo" style={{ width: '25%', height: 'auto' }}/>
         </Row>
         <Row>
           <div className="social-icon">
