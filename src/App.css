@@ -259,10 +259,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 100%;
 
-  background-image: url('./assets/img/sd.jpg');
+
+  /* -webkit-mask-image: ('./assets/img/sd.jpg'); Your image */
+  background-image: linear-gradient(transparent, #040404 80%), url('./assets/img/sd.jpg');
   background-position: top center;
   background-size: cover;
-  opacity: 0.2; /* Adjust this value to control opacity */
+  /*opacity: 0.2;*/ /* Adjust this value to control opacity */
   z-index: -1; /* Place the pseudo-element behind the content */
 }
 .banner .tagline {
