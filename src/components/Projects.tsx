@@ -46,24 +46,7 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  // className={
-                  //   isVisible ? "animate__animated animate__bounceIn" : ""
-                  // }
-                >
-                  <h2>Projects</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Molestiae, possimus obcaecati et delectus itaque dolorem
-                    repudiandae quod nam placeat temporibus nulla quibusdam,
-                    officia earum beatae numquam est ea. Laudantium,
-                    praesentium?
-                  </p>
-                </div>
-              )}
-            </TrackVisibility>
+            <h2>Projects</h2>
 
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
@@ -72,13 +55,13 @@ export const Projects = () => {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                  <Nav.Link eventKey="first">Web Dev</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                  <Nav.Link eventKey="second">Game Dev</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                  <Nav.Link eventKey="third">Other</Nav.Link>
                 </Nav.Item>
               </Nav>
               <TabContent>

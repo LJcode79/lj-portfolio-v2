@@ -358,10 +358,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  /* justify-content: center; */
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+.react-multi-carousel-item {
+  width: 20%;
+  text-align: center;
 }
 .background-image-left {
   top: 28%;
@@ -370,6 +371,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+
+.react-multiple-carousel__arrow {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+/* For screens larger than 1024px (desktops) */
+@media (min-width: 1024px) {
+  .react-multiple-carousel__arrow {
+    margin-left: -30px; /* Example: Wider spacing on desktops */
+    margin-right: -30px;
+  }
+}
+
+/* For screens between 768px and 1023px (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .react-multiple-carousel__arrow {
+    margin-left: -10px; /* Example: Slightly closer on tablets */
+    margin-right: -10px;
+  }
+}
+
+/* For screens smaller than 768px (mobiles) */
+@media (max-width: 767px) {
+  .react-multiple-carousel__arrow {
+    margin-left: -10px; /* Example: Even closer on mobiles */
+    margin-right: -10px;
+  }
+}
+
+
+
 
 /************ Projects Css ************/
 .projects {
@@ -382,6 +415,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   text-align: center;
 }
+
+.projects h2 {
+  margin-bottom: 3%;
+}
+
 .projects p {
   color: #B8B8B8;
   font-size: 18px;
@@ -420,7 +458,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, rgba(240, 247, 144, 0.5) -5.91%, rgba(157, 157, 157, 0.5) 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -452,7 +490,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, rgba(19, 19, 19, 0.5) -5.91%, rgba(157, 157, 157, 0.5) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -497,7 +535,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(0deg, #282828 -5.91%, #000000 111.58%);
   padding: 60px 0 200px 0;
@@ -581,7 +619,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #FFFFFF;
+  background: #000;
   border-radius: 55px;
   color: #121212;
   padding: 85px 125px;
@@ -594,7 +632,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.2em;
 }
 .new-email-bx {
-  background: #fff;
   padding: 5px;
   border-radius: 20px;
   position: relative;
@@ -658,6 +695,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: auto;
   margin-right:auto;
 
+}
+
+.newsletter-bx h3{
+  color:#7a7a7a
 }
 .footer img {
   width: 20%;

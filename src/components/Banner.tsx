@@ -59,8 +59,8 @@ export const Banner = () => {
                                     {text}
                                 </span>
                             </h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium temporibus quae nisi laboriosam, illum magnam? Laborum consequatur placeat aliquam ducimus nulla. Dolores error dolor reiciendis inventore sapiente, molestiae a ullam.</p>
-                            <button onClick={() => window.location.href = '#connect'}>Let's connect <ArrowRightCircle size={25}/></button>
+                            <p>Thanks for visiting my website! I love learning and building things. Check out my projects below!</p>
+                            {/* <button onClick={() => window.location.href = '#connect'}>Let's connect <ArrowRightCircle size={25}/></button> */}
                         </div>}
                     </TrackVisibility>
 
