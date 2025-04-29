@@ -535,7 +535,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Contact Css ************/
+/************ Connect Css ************/
 .contact {
   background: linear-gradient(0deg, #282828 -5.91%, #000000 111.58%);
   padding: 60px 0 200px 0;
@@ -641,7 +641,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, rgba(240, 247, 144, 0.5) -5.91%, rgba(157, 157, 157, 0.5) 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -684,7 +684,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   /* min-width:200px */
 }
 .newsletter-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, rgba(240, 247, 144, 0.5) -5.91%, rgba(157, 157, 157, 0.5) 111.58%);
   padding: 5px 30px;
   margin-top:5%;
   width:200px;
@@ -694,8 +694,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
   margin-left: auto;
   margin-right:auto;
+  background-size: 200% auto; /* Make background larger than the button */
+  background-position: right center; /* Start from the right */
 
 }
+
+.newsletter-bx button:hover {
+  background-position: left center; /* Shift to the left on hover */
+  background: linear-gradient(-90.21deg, rgba(240, 247, 144, 0.5) -5.91%, rgba(157, 157, 157, 0.5) 111.58%);
+}
+
 
 .newsletter-bx h3{
   color:#7a7a7a
