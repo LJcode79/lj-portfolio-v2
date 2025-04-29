@@ -1,17 +1,24 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import {useState, useEffect, useRef} from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from '../assets/img/logo.svg'
 import portfolioLogo from '../assets/img/portfoliov7.png'
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
 import navIcon3 from '../assets/img/nav-icon3.svg'
-
+import { NavLink } from "react-router";
+import { useLocation } from 'react-router'; // If you're using React Router
+import { useNavigate } from 'react-router';
+import '../App.css';
 type Props = {};
 
 const NavBar = (props: Props) => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation(); // Get the current location from React Router (if used)
+  // const [targetElement, setTargetElement] = useState<HTMLElement | null>(null);
+  const navigate = useNavigate();
+  const targetElementRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -29,7 +36,33 @@ const NavBar = (props: Props) => {
 
   const onUpdateActiveLink = (value : string) => {
     setActiveLink(value);
+    navigate(`#${value}`);
   }
+
+  useEffect(() => {
+    // Check for hash on initial load and subsequent route changes
+    if (location.hash) {
+      const elementId = location.hash.substring(1); // Remove the '#'
+      const elementToScroll = document.getElementById(elementId);
+
+      if (elementToScroll) {
+        targetElementRef.current = elementToScroll; // Store in ref
+
+        // // Apply scrollMarginTop *before* scrolling
+        // if (elementId === 'projects' || elementId === 'skills') {
+        //   targetElementRef.current.style.scrollMarginTop = '-600px';
+        // } else {
+        //   targetElementRef.current.style.scrollMarginTop = ''; // Reset for other sections
+        // }
+
+        // Use a slight delay before scrolling.
+        setTimeout(() => {
+          targetElementRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    }
+  }, [location, navigate]);
+
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -42,17 +75,20 @@ const NavBar = (props: Props) => {
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#home" className ={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('home')}>Home</Nav.Link>
-          <Nav.Link href="#projects" className ={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}onClick = {() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-          <Nav.Link href="#skills" className ={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+          <Nav.Link href="/#home" className ={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('home')}>Home</Nav.Link>
+          <Nav.Link href="/#projects" className ={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}onClick = {() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+          <Nav.Link href="/#skills" className ={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
         </Nav>
+        {/* <nav className="me-auto">
+          <NavLink to={"/#home"}>Home</NavLink>
+        </nav> */}
         <span className="navbar-text">
           <div className="social-icon">
             <a href="#"><img src={navIcon1} alt=""/></a>
             <a href="#"><img src={navIcon2} alt=""/></a>
             <a href="#"><img src={navIcon3} alt=""/></a>
           </div>
-          <button className="vvd" onClick={() => window.location.href = '#connect'}><span>Let's Connect</span></button>
+          <button className="vvd" onClick={() => window.location.href = '/#connect'}><span>Let's Connect</span></button>
         </span>
       </Navbar.Collapse>
     </Container>

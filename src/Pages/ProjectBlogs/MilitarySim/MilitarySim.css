@@ -1,0 +1,340 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+    font-family: 'Georgia';
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color:white;
+}
+
+
+/* welcome to my website! */
+.welcome{
+    position: relative;
+    left: -30%;
+    top: 300px;
+    line-height: 3em;
+    font-size:12px;
+    text-align: center;
+}
+
+/* nav links */
+
+
+/* .home{
+}
+
+.otherProject{
+    padding-left: 40px;
+} */
+
+main{
+    position: relative;
+    width: 900px;
+    margin: 600px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    top: -500px;
+    color: white;
+}
+
+.project{
+    padding-top: 0px;
+}
+
+.project a{
+    padding-left: 39%;
+    text-align: center;
+    color: white;
+}
+
+.project h1{
+    text-align: center;
+}
+
+.project h3{
+    text-align: center;
+}
+
+/* .cubetube img, .Blackjack img, .President img, .Spacebase img, .Adventure img, .Turtle img{
+    width: 100%;
+} */
+
+.project img{
+    width: 100%;
+}
+
+#prog1 img{
+    width: 30%;
+    display: inline-block;
+    margin: 5px;
+}
+
+#prog2 img{
+    width: 40%
+}
+
+#prog3 img{
+    width: 40%;
+    display: inline-block;
+    margin: 5px;
+}
+
+#prog4 img{
+    width: 30%;
+    display: inline-block;
+    margin: 5px;
+}
+
+#prog5 img{
+    width: 80%;
+}
+
+.project h3{
+    font-size: 30px;
+}
+
+.project h4{
+    font-size: 13px;
+}
+
+img.cssShow{
+    width: 50%;
+}
+
+/* .Blackjack img{
+    width: 100%;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+    font-family: 'Georgia';
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#ljTop{
+    /* font-family: 'DotGothic16', sans-serif; */
+    /* font-family: 'Shantell Sans', cursive; */
+    /* font-family: 'Cinzel', serif; */
+    /* font-family: 'Bebas Neue', sans-serif; */
+    /* font-family: 'Genos', sans-serif; */
+    /* font-family: 'Cinzel', serif; */
+    font-size: 40px;
+    /* letter-spacing: 4px; */
+}
+
+#degree{
+    font-size:20px;
+}
+
+/* Lawrence John Balanza br computer science bs */
+header h1{
+    /* font-family: 'Lobster', sans-serif; */
+    /* padding: 15px; */
+    margin:0px;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    position: static;
+    /* background-color:rgb(41, 41, 41); */
+    /* background-image: radial-gradient( rgba(0, 0, 0, 0.411), rgba(138, 136, 0, 0.342)); */
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    /* font-family: 'Bebas Neue', sans-serif; */
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    padding-bottom:.5%;
+    padding-top: .5%;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Computer science bs */
+header h1 span{
+    font-size: .4em;
+    /* font-family: garamond;  */
+}
+
+
+/* welcome to my website! */
+.welcome{
+    position: absolute;
+    left: -30%;
+    top: 300px;
+    line-height: 3em;
+    font-size:12px;
+    text-align: center;
+}
+
+/* nav links */
+
+
+/* .home{
+}
+
+.otherProject{
+    padding-left: 40px;
+} */
+
+main{
+    position: relative;
+    margin-top: 9%;
+    /* margin-bottom: 0px; */
+    width:100%;
+    top: 10px;
+    color: white;
+}
+
+#toplabel{
+    position: absolute;
+    margin-top: -3%;
+    padding: 10px 50px;
+    font-size:40px;
+    left:30%;
+    background-image: linear-gradient(to top, rgb(35, 35, 35), rgba(38, 38, 92, 0.979));
+    box-shadow: 0 0 50px 5px rgba(255, 247, 0, 0.322);
+    color: white;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    text-align: center;
+}
+
+.project{
+    margin-top: -190%;
+    margin-bottom: 60px;
+    margin: auto;
+    /* padding:auto; */
+    padding-top: -50%;
+    padding-bottom:150px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    width:80%;
+    /* row-gap: 5000%; */
+    background-image: linear-gradient(to top, rgb(35, 35, 35), rgba(255, 247, 0, 0.132), rgb(35, 35, 35));
+
+}
+
+#pBox{
+    /* position: absolute; */
+    /* border: 1px solid blue; */
+    padding-bottom: 570px;
+    padding-right: 50px;
+    padding-left: 50px;
+    /* gap: 100px; */
+    margin: -150px;
+    margin-bottom: -370px;
+    width: 480px;
+    height: 400px;
+    scale: .45;
+    /* background-color: rgba(73, 237, 255, 0.148); */
+    background-image: linear-gradient(to bottom right, rgb(35, 35, 35), rgba(38, 38, 92, 0.979));
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    text-decoration:none;
+    color:white;
+    transition: all .8s ease;
+}
+
+#pBox:hover{
+    height:480px;
+}
+
+.project a{
+    padding-left: 45%;
+    text-align: center;
+    color: white;
+}
+
+.project h1{
+    text-align: center;
+    font-size:40px;
+}
+
+.project h3{
+    text-align: center;
+}
+
+/* .cubetube img, .Blackjack img, .President img, .Spacebase img, .Adventure img, .Turtle img{
+    width: 100%;
+} */
+
+.pDesc{
+    margin-top: 41px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    color:white;
+    /* align-items: center;  */
+    /* justify-content: center; */
+}
+
+.project img{
+    width: 100%;
+}
+
+.project h3{
+    font-size: 27px;
+}
+
+.project h4{
+    font-size: 10px;
+    font-style: italic;
+}
+
+#toplabel{
+    font-size:40px;
+}
+
+#ecommerce{
+    margin-left: -15px;
+}
+
+#ecCheck{
+    margin-left: -15px;
+}
+
+#connCheck{
+    margin-left: -15px;
+}
+
+#buddy1{
+    text-align: center;
+}
+
+#buddy{
+    margin-left: -40px;
+}
+
+
+
+.Guessboo h3 span{
+    font-size: 15px;
+    font-style: italic;
+}
+
+img.cssShow{
+    width: 50%;
+}
+
+/* .Blackjack img{
+    width: 100%;
+} */
