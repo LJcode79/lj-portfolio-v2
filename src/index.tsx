@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="milSim" element={<MilitarySim />} />
+        <Route path="/milSim" element={<MilitarySim />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

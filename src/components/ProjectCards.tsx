@@ -20,12 +20,10 @@ const ProjectCards = (props: Props) => {
             <div className="proj-txtx">
                 <h4>{title}</h4>
                 <h5>{description}</h5>
-                {webLink &&<a href = {webLink} target="_blank" rel="noopener noreferrer">Link to Website</a>}
-                <br></br>
-                {gitLink && <a href={gitLink} target="_blank" rel="noopener noreferrer">Link to Github</a>}
-                <br></br>
-                {gitLink2 && <a href={gitLink2} target="_blank" rel="noopener noreferrer">Additional Github Link</a>}
-                <br></br>
+                {webLink &&<><a href = {webLink} target="_blank" rel="noopener noreferrer">Link to Website</a><br/></>}
+
+                {gitLink && <><a href={gitLink} target="_blank" rel="noopener noreferrer">Link to Github</a><br/></>}
+                {gitLink2 && <><a href={gitLink2} target="_blank" rel="noopener noreferrer">Supporting Github Link</a><br/></>}
                 {blogLink && <a href={blogLink} target="_blank" rel="noopener noreferrer">Link to Blog</a>}
             </div>
         </div>

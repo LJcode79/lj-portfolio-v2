@@ -79,13 +79,13 @@ export const Projects = () => {
 
   const gameprojects = [
     {
-      title: "Game Startup",
+      title: "Military Sim Survival",
       description: "Design & Development",
       imgUrl: projImg1,
       webLink: undefined,
       gitLink: undefined,
       gitLink2: undefined,
-      blogLink: undefined,
+      blogLink: './milsim',
     },
     {
       title: "Business Startup",

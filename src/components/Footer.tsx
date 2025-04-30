@@ -26,7 +26,7 @@ const Footer = (props: Props) => {
             <a href=""><img src={navIcon2} /></a>
             <a href=""><img src={navIcon3} /></a>
           </div>
-          <p>Copyright 2025. All Rights Reserved by Lawrence John Balanza</p>
+          <p>Copyright 2025. All rights reserved by Lawrence John Balanza</p>
         </Row>
     </Container>
   )
