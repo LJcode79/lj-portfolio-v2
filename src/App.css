@@ -489,18 +489,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 300px;
+  display: flex; /* Enable flexbox for vertical centering */
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Optionally center horizontally if needed */
+  z-index: 0;
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, rgba(19, 19, 19, 0.5) -5.91%, rgba(157, 157, 157, 0.5) 111.58%);
-  opacity: 0.85;
+  background: linear-gradient(90.21deg, rgb(19, 19, 19) -5.91%, rgb(83, 83, 83) 111.58%);
+  opacity: 0.95;
   position: absolute;
   width: 100%;
+  top: 0;
   height: 0;
   transition: 0.4s ease-in-out;
+  z-index: 1;
 }
 .proj-imgbx:hover::before {
   height: 100%;
+  z-index: 1;
+}
+.proj-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Or object-fit: contain; depending on desired behavior */
+  width: auto; /* Maintain aspect ratio */
+  z-index: 0;
 }
 .proj-txtx {
   position: absolute;
@@ -511,10 +526,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  z-index:2;
 }
+
+.proj-txtx a{
+  color:rgb(199, 235, 255);
+  text-decoration: none;
+}
+
+.proj-txtx h5{
+  font-size: 15px;
+  margin: 0 3% 2% 3%;
+}
+
+.proj-txtx a:hover{
+  color:rgb(199, 235, 255);
+  text-decoration: underline;
+}
+
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
+  z-index:2;
 }
 .proj-txtx h4 {
   font-size: 30px;
