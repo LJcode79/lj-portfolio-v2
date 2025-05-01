@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 // server used to send send emails
 const app = express();
 app.use(cors({
-  origin: "https://lj-portfolio-v3-fcesebgqb8c5gsge.westus2-01.azurewebsites.net"
+  origin: "https://lawrencejohn.netlify.app/"
 }));
 app.use(express.json());
 app.use("/", router);
