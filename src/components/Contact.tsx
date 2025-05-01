@@ -34,7 +34,7 @@ const Contact = (props: Props) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         setButtonText('Sending...');
-        let response = await fetch("https://portfolio-backend2-eight.vercel.app/api/contact", {
+        let response = await fetch("https://portfolio-backend2-eight.vercel.app/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
