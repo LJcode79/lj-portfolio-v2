@@ -12,6 +12,7 @@ import SpaceBase from "./Pages/ProjectBlogs/SpaceBase/SpaceBase";
 import President from "./Pages/ProjectBlogs/PresidentialSimulator/President";
 import Blackjack from "./Pages/ProjectBlogs/Blackjack/Blackjack";
 import Cubetube from "./Pages/ProjectBlogs/CubeTube/Cubetube";
+import DoorDetector from "./Pages/ProjectBlogs/DoorDetector/DoorDetector";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -29,6 +30,8 @@ root.render(
         <Route path="/president" element={<President />} />
         <Route path="/blackjack" element={<Blackjack />} />
         <Route path="/cubetube" element={<Cubetube />} />
+        <Route path="/doorDetector" element={<DoorDetector/>} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

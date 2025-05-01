@@ -14,6 +14,9 @@ import SpaceBaseImage from "../Pages/ProjectBlogs/images/Space base Attack/Space
 import PresidentImage from "../Pages/ProjectBlogs/images/president/president1.png"
 import BlackjackImage from "../Pages/ProjectBlogs/images/blackjack/blackjackImage4.png"
 import CubetubeImage from "../Pages/ProjectBlogs/images/CubeTubeScreenshot.png"
+import DoorDetectorImg from "../Pages/ProjectBlogs/images/DoorDetector/iotPic.png"
+
+
 
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -162,59 +165,14 @@ export const Projects = () => {
 
   const otherprojects = [
     {
-      title: "Other Startup",
+      title: "Door Detector",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: DoorDetectorImg,
       webLink: undefined,
       gitLink: undefined,
       gitLink2: undefined,
       blogLink: undefined,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      webLink: undefined,
-      gitLink: undefined,
-      gitLink2: undefined,
-      blogLink: undefined,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      webLink: undefined,
-      gitLink: undefined,
-      gitLink2: undefined,
-      blogLink: undefined,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      webLink: undefined,
-      gitLink: undefined,
-      gitLink2: undefined,
-      blogLink: undefined,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      webLink: undefined,
-      gitLink: undefined,
-      gitLink2: undefined,
-      blogLink: undefined,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      webLink: undefined,
-      gitLink: undefined,
-      gitLink2: undefined,
-      blogLink: undefined,
-    },
+    }
   ];
 
   return (

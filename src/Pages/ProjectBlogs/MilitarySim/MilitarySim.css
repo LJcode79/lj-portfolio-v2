@@ -339,6 +339,10 @@ img.cssShow{
     padding-top: 200px;
     text-align: center;
 }
+
+.milSim video{
+    width: 80%;
+}
 /* .Blackjack img{
     width: 100%;
 } */

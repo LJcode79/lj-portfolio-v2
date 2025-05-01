@@ -154,7 +154,7 @@ header h1 span{
 
 .project img{
     /* width: 50%; */
-    width:100%;
+    width:80%;
     /* padding-left: 10%; */
 }
 
@@ -173,6 +173,7 @@ header h1 span{
     font-size: 10px;
     font-style: italic;
     padding-left:40%;
+    padding-top: 20px;
 }
 
 #toplabel{
