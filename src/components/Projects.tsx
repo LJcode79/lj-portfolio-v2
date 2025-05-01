@@ -166,12 +166,12 @@ export const Projects = () => {
   const otherprojects = [
     {
       title: "Door Detector",
-      description: "Design & Development",
+      description: "An IoT device capable of detecting whether a door is opened or closed. Using a buzzer, the device uses a series of beeps to notify the user when the status of the door changes.",
       imgUrl: DoorDetectorImg,
       webLink: undefined,
-      gitLink: undefined,
+      gitLink: 'https://github.com/LJcode79/IoT-Door-Alarm',
       gitLink2: undefined,
-      blogLink: undefined,
+      blogLink: './doorDetector',
     }
   ];
 

@@ -3,9 +3,8 @@ import {useState, useEffect, useRef} from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from '../assets/img/logo.svg'
 import portfolioLogo from '../assets/img/portfoliov7.png'
-import navIcon1 from '../assets/img/nav-icon1.svg'
-import navIcon2 from '../assets/img/nav-icon2.svg'
-import navIcon3 from '../assets/img/nav-icon3.svg'
+import githubIcon from '../assets/img/githubIcon.png'
+import LinkedInIcon from '../assets/img/linkedInIcon.png'
 import { NavLink } from "react-router";
 import { useLocation } from 'react-router'; // If you're using React Router
 import { useNavigate } from 'react-router';
@@ -84,9 +83,8 @@ const NavBar = (props: Props) => {
         </nav> */}
         <span className="navbar-text">
           <div className="social-icon">
-            <a href="#"><img src={navIcon1} alt=""/></a>
-            <a href="#"><img src={navIcon2} alt=""/></a>
-            <a href="#"><img src={navIcon3} alt=""/></a>
+            <a href="https://www.linkedin.com/in/ljbalanza/"><img src={LinkedInIcon} alt=""/></a>
+            <a href="https://github.com/LJcode79"><img src={githubIcon} alt=""/></a>
           </div>
           <button className="vvd" onClick={() => window.location.href = '/#connect'}><span>Let's Connect</span></button>
         </span>
