@@ -34,10 +34,10 @@ const Contact = (props: Props) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         setButtonText('Sending...');
-        let response = await fetch("http://localhost:5000/contact", {
+        let response = await fetch("https://lj-portfolio-v3-fcesebgqb8c5gsge.westus2-01.azurewebsites.net/contact", {
             method: "POST",
             headers: {
-                "Content-Type": "Application/json;charset=utf-8"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(formDetails),
         });
