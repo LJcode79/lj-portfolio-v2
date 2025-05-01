@@ -34,7 +34,7 @@ const Contact = (props: Props) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         setButtonText('Sending...');
-        let response = await fetch("https://lawrencejohn.netlify.app//contact", {
+        let response = await fetch("https://lawrencejohn.netlify.app/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
