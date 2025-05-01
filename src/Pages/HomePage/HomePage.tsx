@@ -15,7 +15,6 @@ const HomePage = (props: Props) => {
         <Banner />
         <Projects />
         <Skills />
-        <Contact/>
         <Footer />
     </>
   )
