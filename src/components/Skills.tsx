@@ -51,6 +51,12 @@ export const Skills = () => {
                   <h5>TypeScript / JavaScript</h5>
                 </div>
                 <div className="item">
+                  <h5>Express.js</h5>
+                </div>
+                <div className="item">
+                  <h5>Node.js</h5>
+                </div>
+                <div className="item">
                   <h5>C#</h5>
                 </div>
                 <div className="item">
