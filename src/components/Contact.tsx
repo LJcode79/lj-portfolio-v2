@@ -34,7 +34,7 @@ const Contact = (props: Props) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         setButtonText('Sending...');
-        let response = await fetch("https://portfoliobackend-csbac4adg9dzcba0.westus2-01.azurewebsites.net/contact", {
+        let response = await fetch("https://portfolio-backend3-zeta.vercel.app/contact", {
         // let response = await fetch("http://localhost:5000/contact/", {
             method: "POST",
             headers: {
