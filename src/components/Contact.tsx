@@ -34,7 +34,7 @@ const Contact = (props: Props) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         setButtonText('Sending...');
-        let response = await fetch("https://portfolio-backend3-zeta.vercel.app/contact", {
+        let response = await fetch("https://portfolio-backend3-30ai0jz93-lawrence-johns-projects.vercel.app/contact", {
         // let response = await fetch("http://localhost:5000/contact/", {
             method: "POST",
             headers: {
@@ -56,6 +56,8 @@ const Contact = (props: Props) => {
 
     return (
         <section className="contact" id="connect">
+            {/* <h1>Contact information</h1>
+            <h3>lawrencejohnbalanza@gmail.com</h3> */}
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
