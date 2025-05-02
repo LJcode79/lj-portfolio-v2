@@ -6,59 +6,59 @@ import contactImg from "../assets/img/contact-img.svg"
 type Props = {}
 
 const Contact = (props: Props) => {
-    const formInitialDetails = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: '',
+    // const formInitialDetails = {
+    //     firstName: '',
+    //     lastName: '',
+    //     email: '',
+    //     phone: '',
+    //     message: '',
 
-    }
+    // }
 
-    interface Status {
-        success?: boolean;
-        message: string;
-    }
+    // interface Status {
+    //     success?: boolean;
+    //     message: string;
+    // }
 
-    const [formDetails, setFormDetails] = useState(formInitialDetails);
-    const [buttonText, setButtonText] = useState('Send');
-    const [status, setStatus] = useState<Status>({success: false, message: '' });
+    // const [formDetails, setFormDetails] = useState(formInitialDetails);
+    // const [buttonText, setButtonText] = useState('Send');
+    // const [status, setStatus] = useState<Status>({success: false, message: '' });
 
-    const onFormUpdate = (category: string, value: string) => {
-        setFormDetails({
-            ...formDetails,
-            [category]: value
-        })
-    }
+    // const onFormUpdate = (category: string, value: string) => {
+    //     setFormDetails({
+    //         ...formDetails,
+    //         [category]: value
+    //     })
+    // }
 
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-        setButtonText('Sending...');
-        let response = await fetch("https://portfolio-backend3-30ai0jz93-lawrence-johns-projects.vercel.app/contact", {
-        // let response = await fetch("http://localhost:5000/contact/", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formDetails),
-        });
+    // const handleSubmit = async (e: any) => {
+    //     e.preventDefault();
+    //     setButtonText('Sending...');
+    //     let response = await fetch("https://portfolio-backend3-30ai0jz93-lawrence-johns-projects.vercel.app/contact", {
+    //     // let response = await fetch("http://localhost:5000/contact/", {
+    //         method: "POST",
+    //         headers: {
+    //             "Content-Type": "application/json"
+    //         },
+    //         body: JSON.stringify(formDetails),
+    //     });
 
-        setButtonText("Send");
-        let result = await response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code == 200) {
-            setStatus({success: true, message: 'Message sent successfully'})
-        }
-        else {
-            setStatus({ success: false, message: 'something went wrong try again later'})
-        }
-    }
+    //     setButtonText("Send");
+    //     let result = await response.json();
+    //     setFormDetails(formInitialDetails);
+    //     if (result.code == 200) {
+    //         setStatus({success: true, message: 'Message sent successfully'})
+    //     }
+    //     else {
+    //         setStatus({ success: false, message: 'something went wrong try again later'})
+    //     }
+    // }
 
     return (
         <section className="contact" id="connect">
-            {/* <h1>Contact information</h1>
-            <h3>lawrencejohnbalanza@gmail.com</h3> */}
-            <Container>
+            <h1>Contact information</h1>
+            <h3>lawrencejohnbalanza@gmail.com</h3>
+            {/* <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
                         <img src={contactImg} alt="Contact Me"/>
@@ -96,7 +96,7 @@ const Contact = (props: Props) => {
                         </form>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
         </section>
     )
 }
