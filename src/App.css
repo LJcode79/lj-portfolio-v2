@@ -207,6 +207,12 @@ nav.navbar .navbar-toggler:focus {
   display: inline-block;
 }
 
+@media (max-width: 576px) {
+  .wrap {
+    font-size: 25px;
+  }
+}
+
 .wrap .placeholder {
   visibility: hidden;
   display: inline-block
