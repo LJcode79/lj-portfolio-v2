@@ -61,6 +61,12 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <h5>C++</h5>
+                <div className="item">
+                  <h5>Swagger</h5>
+                </div>
+                <div className="item">
+                  <h5>Postman</h5>
+                </div>
                 </div>
                 <div className="item">
                   <h5>Unity Game Engine</h5>
