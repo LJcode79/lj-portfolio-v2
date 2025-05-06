@@ -13,15 +13,12 @@ const Footer = (props: Props) => {
 
   return (
     <Container fluid className = 'footer'>
-        <Row>
-          <MailchimpForm/>
-        </Row>
         <Row className='justify-content-center'>
           <img src={portfolioLogo} alt="Logo" style={{ width: '25%', height: 'auto' }}/>
         </Row>
-        <Row> 
+        <Row>
           <div className="social-icon">
-            
+
             <a className = "footer-icon"href="https://www.linkedin.com/in/ljbalanza/"><img src={LinkedInIcon} alt=""/></a>
             <a className = "footer-icon" href="https://github.com/LJcode79"><img src={githubIcon} alt=""/></a>
           </div>

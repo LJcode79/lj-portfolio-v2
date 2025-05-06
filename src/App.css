@@ -595,7 +595,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Connect Css ************/
 .contact {
   background: linear-gradient(0deg, #282828 -5.91%, #000000 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 60px 0 50px 0;
 }
 .contact img {
   width: 92%;
