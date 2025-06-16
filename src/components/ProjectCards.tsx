@@ -9,10 +9,11 @@ type Props = {
     gitLink: string | undefined;
     gitLink2: string | undefined;
     blogLink: string | undefined;
+    gameLink: string | undefined;
 }
 
 const ProjectCards = (props: Props) => {
-    const { title, description, imgUrl, webLink, gitLink, gitLink2, blogLink } = props;
+    const { title, description, imgUrl, webLink, gitLink, gitLink2, blogLink, gameLink} = props;
     return (
     <Col sm={6} md={4}>
         <div className="proj-imgbx">
@@ -24,7 +25,8 @@ const ProjectCards = (props: Props) => {
 
                 {gitLink && <><a href={gitLink} target="_blank" rel="noopener noreferrer">Link to Github</a><br/></>}
                 {gitLink2 && <><a href={gitLink2} target="_blank" rel="noopener noreferrer">Supporting Github Link</a><br/></>}
-                {blogLink && <a href={blogLink} target="_blank" rel="noopener noreferrer">Link to Blog</a>}
+                {blogLink && <><a href={blogLink} target="_blank" rel="noopener noreferrer">Link to Blog</a><br/></>}
+                {gameLink && <a href={gameLink} target="_blank" rel="noopener noreferrer">Link to Play!</a>}
             </div>
         </div>
     </Col>

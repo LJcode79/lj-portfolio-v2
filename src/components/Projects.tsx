@@ -5,8 +5,11 @@ import runGroupImg from "../assets/img/runGroupImg.png";
 import ecommerceImg from "../assets/img/ecommerceImg.png";
 import workoutBuddy from "../assets/img/workoutBuddy.png";
 import connectSphere from "../assets/img/connectSphere.png"
-import jawsImg from "../assets/img/jaws.png"
-import milSimImg from "../Pages/ProjectBlogs/images/milSim/img1.png"
+import jawsImg from "../assets/img/jaws.png";
+import milSimImg from "../Pages/ProjectBlogs/images/milSim/img1.png";
+import farmImg from "../assets/img/farmSimulator.png";
+import fireiceImg from "../assets/img/fireice.png";
+
 import gBooImg from "../Pages/ProjectBlogs/images/guessBoo/boo1.png"
 import tRangeImage from "../Pages/ProjectBlogs/images/TurtleRange/turtle1.png"
 import ARealmImage from "../Pages/ProjectBlogs/images/Adventure/adventure1.png"
@@ -90,13 +93,34 @@ export const Projects = () => {
 
   const gameprojects = [
     {
+      title: "Fire and Ice",
+      description: "Survival / Rogue Like 2D game made in 10 days for Unity Developer Community Gamejam #34. Theme: 3 Colors Only. Fight fire with ice and ice with fire.",
+      imgUrl: fireiceImg,
+      webLink: undefined,
+      gitLink: undefined,
+      gitLink2: undefined,
+      blogLink: undefined,
+      gameLink: "https://misteralpine.itch.io/fire-ice"
+    },
+    {
+      title: "Sustainable Farming Simulator",
+      description: "Educational game about farming, bringing awareness of food deserts and food scarcity. Made for QS ImpACT game jam. Theme: Address the United Nations Sustainable Development Goals. Plant different vegetables. Uses a building system like the game Rust.",
+      imgUrl: farmImg,
+      webLink: undefined,
+      gitLink: "https://github.com/LJcode79/UN-Project",
+      gitLink2: undefined,
+      blogLink: undefined,
+      gameLink: "https://play.unity.com/en/games/83df8cb9-7797-44e8-80d2-c9ad1cb3ba56/sustainable-farming-simulator"
+    },
+    {
       title: "Military Sim Survival",
       description: "Open world survival game, using tactical shooter and survival mechanics. Inspired by some of my favorite games.",
       imgUrl: milSimImg,
       webLink: undefined,
       gitLink: undefined,
       gitLink2: undefined,
-      blogLink: './milsim',
+      blogLink: undefined,
+      gameLink: undefined
     },
     {
       title: "Guess Boo",
@@ -106,6 +130,7 @@ export const Projects = () => {
       gitLink: 'https://github.com/LJcode79/GuessBoo',
       gitLink2: undefined,
       blogLink: './guessBoo',
+      gameLink: undefined
     },
     {
       title: "Turtle Range",
@@ -115,6 +140,7 @@ export const Projects = () => {
       gitLink: 'https://github.com/LJcode79/TurtleRange',
       gitLink2: undefined,
       blogLink: './turtle',
+      gameLink: undefined
     },
     {
       title: "Adventure Realm",
@@ -124,6 +150,7 @@ export const Projects = () => {
       gitLink: 'https://github.com/LJcode79/AdventureRealm',
       gitLink2: undefined,
       blogLink: './adventure',
+      gameLink: undefined
     },
     {
       title: "Space Base Attack",
@@ -133,6 +160,7 @@ export const Projects = () => {
       gitLink: 'https://github.com/LJcode79/SpaceBaseAttack',
       gitLink2: undefined,
       blogLink: './spaceBase',
+      gameLink: undefined
     },
     {
       title: "Presidential Election Simulator",
@@ -142,6 +170,7 @@ export const Projects = () => {
       gitLink: 'https://github.com/LJcode79/PresidentGame',
       gitLink2: undefined,
       blogLink: './president',
+      gameLink: undefined
     },
     {
       title: "Blackjack",
@@ -151,6 +180,7 @@ export const Projects = () => {
       gitLink: 'https://github.com/LJcode79/BlackjackFinal2020',
       gitLink2: undefined,
       blogLink: './blackjack',
+      gameLink: undefined
     },
     {
       title: "Cubetube",
@@ -160,6 +190,7 @@ export const Projects = () => {
       gitLink: undefined,
       gitLink2: undefined,
       blogLink: './cubetube',
+      gameLink: undefined
     },
   ];
 
@@ -212,6 +243,7 @@ export const Projects = () => {
                           gitLink={project.gitLink}
                           gitLink2={project.gitLink2}
                           blogLink={project.blogLink}
+                          gameLink = {undefined}
                         />
                       );
                     })}
@@ -230,6 +262,7 @@ export const Projects = () => {
                           gitLink={project.gitLink}
                           gitLink2={project.gitLink2}
                           blogLink={project.blogLink}
+                          gameLink = {project.gameLink}
                         />
                       );
                     })}
@@ -248,6 +281,7 @@ export const Projects = () => {
                           gitLink={project.gitLink}
                           gitLink2={project.gitLink2}
                           blogLink={project.blogLink}
+                          gameLink = {undefined}
                         />
                       );
                     })}
