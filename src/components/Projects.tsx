@@ -94,7 +94,7 @@ export const Projects = () => {
   const gameprojects = [
     {
       title: "Fire and Ice",
-      description: "Survival / Rogue Like 2D game made in 10 days for Unity Developer Community Gamejam #34. Theme: 3 Colors Only. Fight fire with ice and ice with fire.",
+      description: "Survival / Rogue Like 2D game made in 10 days for the Unity Developer Community Gamejam #34 (2025). Theme: 3 Colors Only. Fight fire with ice and ice with fire.",
       imgUrl: fireiceImg,
       webLink: undefined,
       gitLink: undefined,
@@ -104,7 +104,7 @@ export const Projects = () => {
     },
     {
       title: "Sustainable Farming Simulator",
-      description: "Educational game about farming, bringing awareness of food deserts and food scarcity. Made for QS ImpACT game jam. Theme: Address the United Nations Sustainable Development Goals. Plant different vegetables. Uses a building system like the game Rust.",
+      description: "Educational game about farming, bringing awareness of food deserts and food scarcity. Made for QS ImpACT game jam 2025. Theme: Address the United Nations Sustainable Development Goals. Plant different vegetables. Uses a building system like the game Rust.",
       imgUrl: farmImg,
       webLink: undefined,
       gitLink: "https://github.com/LJcode79/UN-Project",
@@ -119,7 +119,7 @@ export const Projects = () => {
       webLink: undefined,
       gitLink: undefined,
       gitLink2: undefined,
-      blogLink: undefined,
+      blogLink: './milsim',
       gameLink: undefined
     },
     {
