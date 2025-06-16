@@ -97,7 +97,7 @@ export const Projects = () => {
       description: "Survival / Rogue Like 2D game made in 10 days for the Unity Developer Community Gamejam #34 (2025). Theme: 3 Colors Only. Fight fire with ice and ice with fire.",
       imgUrl: fireiceImg,
       webLink: undefined,
-      gitLink: undefined,
+      gitLink: 'https://github.com/gabe-sd/udc-jam-34',
       gitLink2: undefined,
       blogLink: undefined,
       gameLink: "https://misteralpine.itch.io/fire-ice"
